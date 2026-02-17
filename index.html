@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>New Bites | Pizza & Fried Chicken Restaurant in Kanipakam, Andhra Pradesh</title>
+  <meta name="description"
+    content="New Bites is Kanipakam's best pizza and fried chicken restaurant. Authentic pizza, thunder wings, mini bites & more. Starting from ₹59. Open daily from 10AM. Kids birthday friendly. All You Can Eat available." />
+  <meta name="keywords"
+    content="New Bites, pizza Kanipakam, fried chicken Kanipakam, restaurant Patnam, pizza Andhra Pradesh, thunder wings, best pizza near me, kids birthday restaurant" />
+  <meta name="author" content="New Bites Restaurant" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (WhatsApp, Facebook preview) -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="New Bites | Pizza & Fried Chicken | Kanipakam" />
+  <meta property="og:description"
+    content="Authentic pizza & fried chicken in Kanipakam. Starting ₹59. Open daily 10AM. Kids birthday friendly. All You Can Eat available." />
+  <meta property="og:image" content="/combo.jpeg" />
+  <meta property="og:url" content="https://newbites.in" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="New Bites | Pizza & Fried Chicken | Kanipakam" />
+  <meta name="twitter:description" content="Authentic pizza & fried chicken in Kanipakam. Starting ₹59." />
+  <meta name="twitter:image" content="/combo.jpeg" />
+
+  <!-- Local Business Schema (Google) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "New Bites",
+      "image": "/combo.jpeg",
+      "description": "Pizza and fried chicken restaurant in Kanipakam",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kanipakam",
+        "addressLocality": "Patnam",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "517131",
+        "addressCountry": "IN"
+      },
+      "telephone": "+917989308995",
+      "servesCuisine": ["Pizza", "Fried Chicken"],
+      "priceRange": "₹",
+      "openingHours": "Mo-Su 10:00-22:00",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "226"
+      }
+    }
+    </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Syne:wght@700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            syne: ['Syne', 'sans-serif'],
+            dm: ['DM Sans', 'sans-serif'],
+          },
+          colors: {
+            'bg-cream': '#F5F0E8',
+            'green-dark': '#1E4D2B',
+            'green-mid': '#2D6A3F',
+            'red-accent': '#C8293A',
+            'warm-white': '#FEFCF8',
+            'text-dark': '#1A1208',
+            'text-mid': '#4A3F30',
+          },
+          boxShadow: {
+            'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F5F0E8;
+      color: #1A1208;
+    }
+
+    .clip-diagonal {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+
+    @media (min-width: 1024px) {
+      .clip-hero-left {
+        clip-path: polygon(0 0, 65% 0, 45% 100%, 0% 100%);
+      }
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #F5F0E8;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #2D6A3F;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1E4D2B;
+    }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>

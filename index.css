@@ -1,0 +1,85 @@
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari and Opera */
+}
+
+/* Tab Wrapper & Inner Container Styles */
+.tab-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.tab-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-inner {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 0 24px;
+  min-width: max-content;
+}
+
+@media (min-width: 768px) {
+  .tab-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: unset;
+    width: 100%;
+    padding: 0 24px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tab-inner {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    min-width: max-content;
+    padding: 0 16px;
+  }
+}
+
+/* Image Fallback Placeholder */
+.img-missing::after {
+  content: attr(data-name);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background: #f0ede8;
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
