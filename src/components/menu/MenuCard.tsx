@@ -25,7 +25,7 @@ const MenuCard: React.FC<MenuCardProps> = ({ item }) => {
 
     return (
         <div
-            className="flex flex-col bg-[#1A1410] rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group h-full border border-white/5"
+            className="flex flex-col bg-[#1A1410] rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group border border-white/5"
         >
             {/* Image Container 16:9 */}
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl">
@@ -54,8 +54,8 @@ const MenuCard: React.FC<MenuCardProps> = ({ item }) => {
             </div>
 
             {/* Content Container */}
-            <div className="flex flex-col flex-grow p-5 justify-between">
-                <div className="min-h-[48px] mb-4">
+            <div className="flex flex-col p-5">
+                <div className="mb-4">
                     <h3 className="font-poppins text-[#f5f5f5] font-bold text-[18px] leading-snug line-clamp-2 uppercase tracking-wide">
                         {item.name}
                     </h3>

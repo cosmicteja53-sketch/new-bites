@@ -52,7 +52,7 @@ const Menu: React.FC = () => {
                     </div>
 
                     {/* Premium Responsive Grid (2 mobile/tablet, 3 desktop) */}
-                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6 items-stretch min-h-[500px]">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6 min-h-[500px]">
                         {activeCategoryData.items.map((item, idx) => (
                             <MenuCard key={`${activeCategoryData.id}-${idx}`} item={item} />
                         ))}
